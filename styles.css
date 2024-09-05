@@ -19,6 +19,7 @@
     --dark-color-lighter: #4D4D4D;
     --accent-color: #F55556;
     --section-background-color: #fae9e9;
+    --clr-gold: #c59d5f;
 }
 
 html {
@@ -298,6 +299,7 @@ img {
     color: var(--accent-color);
     line-height: 2.4rem;
     margin-bottom: .8rem;
+    font-size: 24px;
 }
 
 .section-title{
@@ -360,7 +362,13 @@ section:not(hero) .text-content-group{
 }
 
 .why-choose-us .section-tagline{
-    color: #03a66b;
+    /* color: #03a66b; */
+    display: inline-block;
+    font-weight: 500;
+    color: var(--accent-color);
+    line-height: 2.4rem;
+    margin-bottom: .8rem;
+    font-size: 24px;
 }
 
 section:not(hero) .button{
@@ -690,6 +698,7 @@ section:not(hero) .button{
     .section-title{
         font-size: 4rem;
     }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -712,4 +721,66 @@ section:not(hero) .button{
   background-color:#FAE9E9;
 }
 
+/* Contact Us section styles */
+#contact-us {
+  background-color: #f7f7f7; /* light gray background */
+  padding: 40px 0;
+}
 
+#contact-us .title.section-title {
+  color: #333; /* dark gray title */
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#contact-us .text-content-paragraph {
+  color: #666; /* medium gray text */
+  font-size: 18px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-method {
+  margin: 20px;
+  text-align: center;
+}
+
+.contact-method i {
+  font-size: 36px;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.contact-method p {
+  margin-bottom: 20px;
+}
+
+.contact-method a {
+  color: #666;
+  text-decoration: none;
+}
+
+.contact-method a:hover {
+  color: var(--accent-color);
+}
+
+#footer {
+  background-color: #ebd8d8;
+  padding: 20px;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background: var(--accent-color);
+  margin-left: auto;
+  margin-right: auto;
+}
