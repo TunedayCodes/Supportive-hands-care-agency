@@ -19,7 +19,7 @@
     <!-- !HEADER -->
 
 <header id="header">
-    <nav class="navbar container">
+    <nav id="nav" class="navbar container fixed-nav">
         <a href="./index.html" class="logo">
             <img src="./images/SHCA-logo-NoBG.png" alt="shca-logo" class="logo-image">
         </a>
@@ -93,7 +93,7 @@
 </section>
 
     <!-- !WHAT WE SERVE-->
-<section class="what-we-serve section">
+<section id="services" class="what-we-serve section">
     <div class="container">
         <div class="section-metadata">
             <span class="section-tagline">What we offer</span>
@@ -163,7 +163,7 @@
         </div>
     </div>
 </section>
-    <!-- !OUR CARE PROCESS -->
+    <!-- OUR CARE PROCESS -->
 
     <section class="home-delivery">
         <div class="home-delivery-container container d-grid">
@@ -261,13 +261,18 @@
       <div>
         <img src="./images/SHCA-logo-NoBG.png" alt="Grover's logo" class="footer-logo-image">
       </div>
-        <span  class="copyright-information">&copy; Supportive Hands Care Agency 2024. All Rights Reserved.</span>
+        <span  class="copyright-information">&copy; Supportive Hands Care Agency <span id="date"></span>.
+        All Rights Reserved.</span>
         <div class="legal-information">
             <a href="#">Terms & Conditions</a>
             <a href="#">Privacy policy</a>
         </div>
     </div>
-</footer>    
+</footer> 
+
+<a href="#" class="scroll-link top-link">
+  <i class="fas fa-arrow-up"></i>
+</a>
     
     <script src="script.js"></script>
 </body>

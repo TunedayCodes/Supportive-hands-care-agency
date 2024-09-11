@@ -19,7 +19,6 @@
     --dark-color-lighter: #4D4D4D;
     --accent-color: #F55556;
     --section-background-color: #fae9e9;
-    --clr-gold: #c59d5f;
 }
 
 html {
@@ -299,14 +298,19 @@ img {
     color: var(--accent-color);
     line-height: 2.4rem;
     margin-bottom: .8rem;
-    font-size: 24px;
 }
 
 .section-title{
     font-size: 2.4rem;
     line-height: 4.4rem;
-    margin-bottom: 2.2rem;
+    /* margin-bottom: 2.2rem; */
+    transition:margin-left 2s;
+    cursor: pointer;
 }
+.section-title:hover{
+    margin-left: 20px;
+}
+
 
 .card-group{
     margin: 7rem 0 2rem;
@@ -362,13 +366,7 @@ section:not(hero) .text-content-group{
 }
 
 .why-choose-us .section-tagline{
-    /* color: #03a66b; */
-    display: inline-block;
-    font-weight: 500;
-    color: var(--accent-color);
-    line-height: 2.4rem;
-    margin-bottom: .8rem;
-    font-size: 24px;
+    color: #03a66b;
 }
 
 section:not(hero) .button{
@@ -698,7 +696,6 @@ section:not(hero) .button{
     .section-title{
         font-size: 4rem;
     }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -772,20 +769,17 @@ section:not(hero) .button{
   color: var(--accent-color);
 }
 
-#footer {
+body {
   background-color: #ebd8d8;
-  padding: 20px;
 }
 
 .underline {
-  width: 5rem;
-  height: 0.25rem;
-  background: var(--accent-color);
-  margin-left: auto;
-  margin-right: auto;
-}
+    width: 5rem;
+    height: 0.25rem;
+    background: var(--accent-color);
+  }
 
-.top-link {
+  .top-link {
     font-size: 1.25rem;
     position: fixed;
     bottom: 3rem;
