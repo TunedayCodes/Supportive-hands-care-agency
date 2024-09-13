@@ -812,3 +812,8 @@ body {
       transform: scale(1);
     }
   }
+
+.roles {
+    color: var(--accent-color);
+    font-weight: bold;
+}
